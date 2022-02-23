@@ -42,5 +42,8 @@ Route::get('/anh',function(){
 Route::get('/soapy',function(){
     return Inertia::render('Soapy');
 });
+Route::get('/cluster-google-map',function(){
+    return Inertia::render('Cluster');
+});
 Route::resource('/crud', CrudController::class);
 Route::resource('/map', GoogleMap::class);
